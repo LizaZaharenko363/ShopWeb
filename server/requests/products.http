@@ -1,0 +1,22 @@
+@api = http://localhost:3000/products
+
+GET {{api}}
+
+###
+POST {{api}}
+Content-Type: application/json
+
+{
+    "name":"Палатка 3",
+    "description":"Палатка синя двомісна",
+    "category":1,
+    "quantity": 5
+}
+
+###
+
+GET {{api}}/13
+
+###
+
+DELETE {{api}}/17
